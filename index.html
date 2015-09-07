@@ -4,57 +4,133 @@
     <title>The Portfolio of Jamie Simper</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="main.css" type="text/css" rel="stylesheet" />
-    <link href='https://fonts.googleapis.com/css?family=Exo+2:400,600' rel='stylesheet' type='text/css'>
+
   </head>
   <body>
     <div class="body__wrapper">
       <header>
-        <nav>
+        <nav class="nav">
           <ul>
             <li><a href="#about">About Me</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#work">My Work</a></li>
-            <li><a href="#contact">Contact</a></li>
-              <ul>
-                <li>Phone</li>
-                <li>Email</li>
-                <li>Github</li>
-                <li>Linkdin</li>
+            <li><a href="#contact">Contact</a>
+              <ul class="dropdown">
+                <li><a href="tel:+1-843-813-7006">
+                  <img src="images/phone.png" alt="phone link" title="Call me" />
+                </a></li>
+                <li><a href="mailto:jamieasimper@gmail.com?Subject=I%20just%20saw%20your%20portfolio%20and%20would%20love%20to%20talk%20with%20you" target="_top">
+                  <img src="images/mail.png" alt="email link" title="Email me" />
+                </a></li>
+                <li><a href="https://github.com/jasimper">
+                  <img src="images/sm_github.png" alt="GitHub profile link" title="Go to my profile on GitHub" />
+                </a></li>
+                <li><a href="https://linkedin.com/in/jasimper">
+                  <img src="images/linkedin.png" alt="Linkedin profile link" title="Go to my profile on Linkedin" />
+                </a></li>
               </ul>
+            </li>
           </ul>
         </nav>
       </header>
       <div class="main__content">
         <div class="about__me" id="about">
-
+          <div class="section__header"><h1>About Me</h1></div>
         </div>
         <div class="skills" id="skills">
-          <div class="backend">
+          <div class="section__header"><h1>Skills</h1></div>
+          <div class="skill__type">
+            <div class="subsection__header"><h3>Back-end</h3></div>
+            <div class="skill__list">
+              <img src="images/rails.png" />
+              <ul>
+                <li>Ruby on Rails</li>
+                <li>PostgreSQL</li>
+                <li>MiniTest</li>
+                <li>Capybara</li>
+              </ul>
+            </div>
           </div>
-          <div class="frontend">
+          <div class="skill__type">
+              <div class="subsection__header"><h3>Front-end</h3></div>
+              <div class="skill__list">
+                <img src="images/html5.png" />
+                <ul>
+                  <li>HTML 5</li>
+                  <li>CSS 3/Sass</li>
+                  <li>Javascript</li>
+                  <li>React.js</li>
+                  <li>NPM</li>
+                </ul>
+              </div>
           </div>
-          <div class="tools">
+          <div class="skill__type">
+              <div class="subsection__header"><h3>Tools</h3></div>
+              <div class="skill__list">
+                <img src="images/lg_github.png" />
+                <ul>
+                  <li>Git/GitHub</li>
+                  <li>Pivotal Tracker</li>
+                  <li>Atom</li>
+                  <li>Mac OS/Windows OS</li>
+                </ul>
+              </div>
           </div>
-          <div class="life__skills">
+          <div class="skill__type">
+              <div class="subsection__header"><h3>Life Skills</h3></div>
+              <div class="skill__list">
+                <img src="images/yarn.png" />
+                <!-- Yarn by Cassie McKown from the Noun Project -->
+                <ul>
+                  <li>Logic</li>
+                  <li>Perserverence</li>
+                  <li>With a few sheep, a spinning wheel, and knitting needles, I can keep us all clothed during the Zombie Apocalypse</li>
+                </ul>
+              </div>
           </div>
         </div>
         <div class="my__work" id="work">
+          <div class="section__header"><h1>Some of My Work</div>
           <div class="example__work">
-            <div class="portfolio__image"></div>
-            <div class="portfolio__description"></div>
+            <div class="portfolio__image"><img src="images/Salty_Paws.png" /></div>
+            <div class="portfolio__description">
+              <p>Salty Paws is a website created for volunteers who deditcate their time to caring for free-roaming cats. This site, which I co-created with 3 awesome classmates, was my final project for The Iron Yard.</p>
+              <p>Skills/Tools used: Rails, PostgreSQL, HTML5, CSS3/Sass, React, Git/GitHub, Pivotal Tracker, Minitest</p>
+            </div>
           </div>
           <div class="example__work">
-            <div class="portfolio__image"></div>
-            <div class="portfolio__description"></div>
+            <div class="portfolio__image"><img src="images/Hex_Mex.png" /></div>
+            <div class="portfolio__description">
+              <p>Hex Mex is created by parsing a JSON file of titles, keywords, and hex values for multiple color palletes. With JavaScript and the DOM API, the palletes are rendered onto a webpage, then styled with CSS.</p>
+              <p>Skills used: JavaScipt, DOM API, CSS3, HTML, Git/Github</p>
+            </div>
           </div>
           <div class="example__work">
-            <div class="portfolio__image"></div>
-            <div class="portfolio__description"></div>
+            <div class="portfolio__image"><img src="images/Vaders_to-do.png" /></div>
+            <div class="portfolio__description">
+              <p>Darth Vader's To-do List is another fun exercise in JavaScript. By just querying the DOM and building HTML strings with JavaScript, then posting them to the DOM, items are added to the to-do list where they can be marked as complete and deleted.</p>
+              <p>Skills used: JavaScript, CSS3, HTML, Git/Github</p>
+            </div>
           </div>
         </div>
       </div>
       <footer class="contact" id="contact">
-        <a href="mailto:jamieasimper@gmail.com?Subject=I%20just%20saw%20your%20portfolio%20and%20would%20love%20to%20talk%20with%20you" target="_top">jamieasimper@gmail.com</a>
+        <div class="contact__info">
+          <ul>
+            <li><a href="tel:+1-843-813-7006">
+              <img src="images/phone.png" alt="phone link" title="Call me" />
+            </a></li>
+            <li><a href="mailto:jamieasimper@gmail.com?Subject=I%20just%20saw%20your%20portfolio%20and%20would%20love%20to%20talk%20with%20you" target="_top">
+              <img src="images/mail.png" alt="email link" title="Email me" />
+            </a></li>
+            <li><a href="https://github.com/jasimper">
+              <img src="images/sm_github.png" alt="GitHub profile link" title="Go to my profile on GitHub" />
+            </a></li>
+            <li><a href="https://linkedin.com/in/jasimper">
+              <img src="images/linkedin.png" alt="Linkedin profile link" title="Go to my profile on Linkedin" />
+            </a></li>
+          </ul>
+        </div>
       </footer>
     </div>
   </body>
