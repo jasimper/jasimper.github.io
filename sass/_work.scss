@@ -1,5 +1,8 @@
 .my__work {
-  padding: 0 10px 20px 10px;
+  padding: 10px 0 50px 0;
+  > .section__header {
+    @include headline($text-medium);
+  }
 }
 .example__work {
   display: inline-block;
@@ -17,17 +20,20 @@
   @media all and (min-width: $break-s) {
     width: 90%;
   }
-  > img {
+  > a img {
     width: 100%;
     height: 100%;
     overflow: hidden;
     border: solid 2px #CCCCCC;
     border-radius: 0 20%;
+    &:hover {
+      border: solid #669966 2px;
+    }
   }
 }
 .portfolio__description {
   padding: 10px;
-  background-color: #999999;
+  background-color: #707070;
   border-radius: 5px;
   margin: 0 15px;
   > p {
@@ -35,5 +41,16 @@
     font-size: .9rem;
     margin-top: 0;
   }
-
+}
+.portfolio__links {
+  text-align: center;
+  > a img {
+    padding: 10px 10px;
+    margin: 0 20px;
+    border: solid #CCCCCC 2px;
+    border-radius: 50%;
+    &:hover {
+      border-color: #669966;
+    }
+  }
 }

@@ -1,0 +1,36 @@
+.about__me {
+  padding: 10px 0 50px 0;
+  text-align: center;
+  > .section__header {
+    @include headline($text-medium);
+  }
+}
+.about__photo {
+  display: inline-block;
+  padding: 10px 50px;
+  margin: 0 auto;
+  @media all and (min-width: $break-s) {
+    width: 300px;
+  }
+  > img {
+    width: 200px;
+    border-radius: 100%;
+  }
+}
+.about__description {
+  display: inline-block;
+  padding: 10px 50px;
+  margin-top: 20px;
+  vertical-align: top;
+  @media all and (min-width: $break-s) {
+    width: 60%;
+  }
+  @media all and (min-width: $break-m) {
+    width: 48%;
+  }
+  > p {
+    display: inline-block;
+    text-align: left;
+    line-height: 1.6rem;
+  }
+}

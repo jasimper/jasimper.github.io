@@ -1,5 +1,7 @@
 header {
   background-color: #EEEEEE;
+  border-top: solid #669966 2px;
+  border-bottom: solid #66CCCC 2px;
 }
 .nav {
   display: inline-block;
@@ -18,7 +20,7 @@ header {
     }
     > li a {
       text-decoration: none;
-      color: green;
+      color: #669966;
       padding: 5px;
       &:hover {
         background-color: #CCCCCC;
