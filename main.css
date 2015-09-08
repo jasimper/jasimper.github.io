@@ -39,10 +39,15 @@ header {
 
 .nav {
   display: inline-block;
-  text-align: left;
-  font-size: 1.2rem;
-  line-height: 1.8rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
   padding-left: 10px; }
+  @media all and (min-width: 550px) {
+    .nav {
+      text-align: left;
+      font-size: 1.2rem;
+      line-height: 1.8rem; } }
   .nav > ul {
     display: inline-block;
     padding: 10px 0 10px 0;
@@ -154,6 +159,7 @@ footer {
   .contact__info > ul {
     text-decoration: none;
     list-style-type: none;
+    padding-left: 20px;
     margin: 0 auto; }
     .contact__info > ul > li {
       padding: 0 10px;
